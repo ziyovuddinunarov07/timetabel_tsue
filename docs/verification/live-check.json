@@ -1,0 +1,25 @@
+{
+  "successful": "2026-09-17T19:58:15.775479+05:00",
+  "attempted": "2026-09-17T19:58:05.812733+05:00",
+  "changed": "2026-09-17T19:58:15.775479+05:00",
+  "source": "https://tsue.edupage.org/timetable/",
+  "schedules": [
+    {
+      "group": "MR-86/25",
+      "group_id": "*591",
+      "version": "94",
+      "valid_from": "2026-09-07",
+      "valid_to": "2026-09-30",
+      "lessons": 12
+    }
+  ],
+  "substitutions": {
+    "2026-09-14": "confirmed_none",
+    "2026-09-15": "confirmed_none",
+    "2026-09-16": "confirmed_none",
+    "2026-09-17": "confirmed_none",
+    "2026-09-18": "confirmed_none",
+    "2026-09-19": "confirmed_none",
+    "2026-09-20": "confirmed_none"
+  }
+}

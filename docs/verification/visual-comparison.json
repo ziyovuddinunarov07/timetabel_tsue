@@ -1,0 +1,86 @@
+[
+  {
+    "day": 0,
+    "period": "4",
+    "card": "*5876",
+    "displayed_cell": "Falsafa (Sem) Qudratova U. 7/216-30",
+    "matched": true
+  },
+  {
+    "day": 0,
+    "period": "5",
+    "card": "*5873",
+    "displayed_cell": "Falsafa (Ma) Qudratova U. 7-bino faollar-160 zali",
+    "matched": true
+  },
+  {
+    "day": 1,
+    "period": "4",
+    "card": "*5877",
+    "displayed_cell": "Falsafa (Sem) Qudratova U. 7/407-24",
+    "matched": true
+  },
+  {
+    "day": 1,
+    "period": "5",
+    "card": "*5971",
+    "displayed_cell": "Raqamli iqtisodiyot (Ma) Samieva M. 7/214-60",
+    "matched": true
+  },
+  {
+    "day": 1,
+    "period": "6",
+    "card": "*5970",
+    "displayed_cell": "Raqamli iqtisodiyot (Ma) Samieva M. 7/214-60",
+    "matched": true
+  },
+  {
+    "day": 2,
+    "period": "5",
+    "card": "*5872",
+    "displayed_cell": "Falsafa (Ma) Qudratova U. 7/210-60",
+    "matched": true
+  },
+  {
+    "day": 2,
+    "period": "6",
+    "card": "*5974",
+    "displayed_cell": "Raqamli iqtisodiyot(Sem) Samieva M. /Rustamova Ziyoda 5/110 lab / 5/114 lab",
+    "matched": true
+  },
+  {
+    "day": 3,
+    "period": "4",
+    "card": "*5975",
+    "displayed_cell": "Raqamli iqtisodiyot(Sem) Samieva M. /Rustamova Ziyoda 5/106 lab / 5/108 lab",
+    "matched": true
+  },
+  {
+    "day": 3,
+    "period": "5",
+    "card": "*5793",
+    "displayed_cell": "Marketing (Ma) Yusupov M 7/214-60",
+    "matched": true
+  },
+  {
+    "day": 3,
+    "period": "6",
+    "card": "*5792",
+    "displayed_cell": "Marketing (Ma) Yusupov M 7/214-60",
+    "matched": true
+  },
+  {
+    "day": 4,
+    "period": "4",
+    "card": "*5816",
+    "displayed_cell": "Marketing (sem) Yusupov M 7/217-30",
+    "matched": true
+  },
+  {
+    "day": 4,
+    "period": "5",
+    "card": "*5817",
+    "displayed_cell": "Marketing (sem) Yusupov M 7/405-30",
+    "matched": true
+  }
+]

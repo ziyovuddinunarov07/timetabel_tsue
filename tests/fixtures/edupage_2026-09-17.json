@@ -1,0 +1,1156 @@
+{
+  "meta": {
+    "tt_num": "94",
+    "year": 2026,
+    "text": "September 14 -2026 (07. 09. - 30. 09. 2026)",
+    "datefrom": "2026-09-07",
+    "hidden": false
+  },
+  "regular": {
+    "dbiAccessorRes": {
+      "type": "ttuidocdbi",
+      "tables": [
+        {
+          "id": "classes",
+          "data_rows": [
+            {
+              "id": "*591",
+              "name": "MR-86/25",
+              "short": "MR-86/25",
+              "teacherid": "",
+              "classroomids": [],
+              "bell": "0",
+              "color": "#00FFFF",
+              "customfields": [
+                {
+                  "field": "#3956",
+                  "value": ""
+                }
+              ],
+              "printsubjectpictures": true,
+              "edupageid": "",
+              "classroomid": "",
+              "teacherids": []
+            }
+          ]
+        },
+        {
+          "id": "lessons",
+          "data_rows": [
+            {
+              "id": "*3521",
+              "subjectid": "*2084",
+              "teacherids": [
+                "-883"
+              ],
+              "groupids": [
+                "*2946",
+                "*2951"
+              ],
+              "classids": [
+                "*590",
+                "*591"
+              ],
+              "count": 2,
+              "durationperiods": 1,
+              "termsdefid": "*3",
+              "weeksdefid": "*4",
+              "daysdefid": "*7",
+              "terms": "1",
+              "seminargroup": null,
+              "bell": "",
+              "texts": null,
+              "studentids": [],
+              "groupnames": [
+                ""
+              ],
+              "classdata": {
+                "*590": {
+                  "divisionid": "*590:",
+                  "groups": "1"
+                },
+                "*591": {
+                  "divisionid": "*591:",
+                  "groups": "1"
+                }
+              }
+            },
+            {
+              "id": "*3533",
+              "subjectid": "*2087",
+              "teacherids": [
+                "-883"
+              ],
+              "groupids": [
+                "*2951"
+              ],
+              "classids": [
+                "*591"
+              ],
+              "count": 2,
+              "durationperiods": 1,
+              "termsdefid": "*3",
+              "weeksdefid": "*4",
+              "daysdefid": "*7",
+              "terms": "1",
+              "seminargroup": null,
+              "bell": "",
+              "texts": null,
+              "studentids": [],
+              "groupnames": [
+                ""
+              ],
+              "classdata": {
+                "*591": {
+                  "divisionid": "*591:",
+                  "groups": "1"
+                }
+              }
+            },
+            {
+              "id": "*3561",
+              "subjectid": "*5105",
+              "teacherids": [
+                "*1672"
+              ],
+              "groupids": [
+                "*2946",
+                "*2951"
+              ],
+              "classids": [
+                "*590",
+                "*591"
+              ],
+              "count": 2,
+              "durationperiods": 1,
+              "termsdefid": "*3",
+              "weeksdefid": "*4",
+              "daysdefid": "*7",
+              "terms": "1",
+              "seminargroup": null,
+              "bell": "",
+              "texts": null,
+              "studentids": [],
+              "groupnames": [
+                ""
+              ],
+              "classdata": {
+                "*590": {
+                  "divisionid": "*590:",
+                  "groups": "1"
+                },
+                "*591": {
+                  "divisionid": "*591:",
+                  "groups": "1"
+                }
+              }
+            },
+            {
+              "id": "*3563",
+              "subjectid": "*1156",
+              "teacherids": [
+                "*1672"
+              ],
+              "groupids": [
+                "*2951"
+              ],
+              "classids": [
+                "*591"
+              ],
+              "count": 2,
+              "durationperiods": 1,
+              "termsdefid": "*3",
+              "weeksdefid": "*4",
+              "daysdefid": "*7",
+              "terms": "1",
+              "seminargroup": null,
+              "bell": "",
+              "texts": null,
+              "studentids": [],
+              "groupnames": [
+                ""
+              ],
+              "classdata": {
+                "*591": {
+                  "divisionid": "*591:",
+                  "groups": "1"
+                }
+              }
+            },
+            {
+              "id": "*3610",
+              "subjectid": "*6783",
+              "teacherids": [
+                "*1949"
+              ],
+              "groupids": [
+                "*2946",
+                "*2951"
+              ],
+              "classids": [
+                "*590",
+                "*591"
+              ],
+              "count": 2,
+              "durationperiods": 1,
+              "termsdefid": "*3",
+              "weeksdefid": "*4",
+              "daysdefid": "*7",
+              "terms": "1",
+              "seminargroup": null,
+              "bell": "",
+              "texts": null,
+              "studentids": [],
+              "groupnames": [
+                ""
+              ],
+              "classdata": {
+                "*590": {
+                  "divisionid": "*590:",
+                  "groups": "1"
+                },
+                "*591": {
+                  "divisionid": "*591:",
+                  "groups": "1"
+                }
+              }
+            },
+            {
+              "id": "*3612",
+              "subjectid": "*2833",
+              "teacherids": [
+                "*1949",
+                "*1865"
+              ],
+              "groupids": [
+                "*2951"
+              ],
+              "classids": [
+                "*591"
+              ],
+              "count": 2,
+              "durationperiods": 1,
+              "termsdefid": "*3",
+              "weeksdefid": "*4",
+              "daysdefid": "*7",
+              "terms": "1",
+              "seminargroup": null,
+              "bell": "",
+              "texts": null,
+              "studentids": [],
+              "groupnames": [
+                ""
+              ],
+              "classdata": {
+                "*591": {
+                  "divisionid": "*591:",
+                  "groups": "1"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cards",
+          "data_rows": [
+            {
+              "id": "*5792",
+              "lessonid": "*3521",
+              "locked": false,
+              "period": "6",
+              "days": "000100",
+              "weeks": "11",
+              "classroomids": [
+                "*363"
+              ]
+            },
+            {
+              "id": "*5793",
+              "lessonid": "*3521",
+              "locked": false,
+              "period": "5",
+              "days": "000100",
+              "weeks": "11",
+              "classroomids": [
+                "*363"
+              ]
+            },
+            {
+              "id": "*5816",
+              "lessonid": "*3533",
+              "locked": false,
+              "period": "4",
+              "days": "000010",
+              "weeks": "11",
+              "classroomids": [
+                "*366"
+              ]
+            },
+            {
+              "id": "*5817",
+              "lessonid": "*3533",
+              "locked": false,
+              "period": "5",
+              "days": "000010",
+              "weeks": "11",
+              "classroomids": [
+                "*370"
+              ]
+            },
+            {
+              "id": "*5872",
+              "lessonid": "*3561",
+              "locked": false,
+              "period": "5",
+              "days": "001000",
+              "weeks": "11",
+              "classroomids": [
+                "*359"
+              ]
+            },
+            {
+              "id": "*5873",
+              "lessonid": "*3561",
+              "locked": false,
+              "period": "5",
+              "days": "100000",
+              "weeks": "11",
+              "classroomids": [
+                "*349"
+              ]
+            },
+            {
+              "id": "*5876",
+              "lessonid": "*3563",
+              "locked": false,
+              "period": "4",
+              "days": "100000",
+              "weeks": "11",
+              "classroomids": [
+                "*365"
+              ]
+            },
+            {
+              "id": "*5877",
+              "lessonid": "*3563",
+              "locked": false,
+              "period": "4",
+              "days": "010000",
+              "weeks": "11",
+              "classroomids": [
+                "*372"
+              ]
+            },
+            {
+              "id": "*5970",
+              "lessonid": "*3610",
+              "locked": false,
+              "period": "6",
+              "days": "010000",
+              "weeks": "11",
+              "classroomids": [
+                "*363"
+              ]
+            },
+            {
+              "id": "*5971",
+              "lessonid": "*3610",
+              "locked": false,
+              "period": "5",
+              "days": "010000",
+              "weeks": "11",
+              "classroomids": [
+                "*363"
+              ]
+            },
+            {
+              "id": "*5974",
+              "lessonid": "*3612",
+              "locked": false,
+              "period": "6",
+              "days": "001000",
+              "weeks": "11",
+              "classroomids": [
+                "*245",
+                "*248"
+              ]
+            },
+            {
+              "id": "*5975",
+              "lessonid": "*3612",
+              "locked": false,
+              "period": "4",
+              "days": "000100",
+              "weeks": "11",
+              "classroomids": [
+                "*243",
+                "*244"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subjects",
+          "data_rows": [
+            {
+              "id": "*5105",
+              "name": "Falsafa (Ma)",
+              "short": "Falsafa (Ma)",
+              "color": "#FF6600",
+              "picture_url": "",
+              "customfields": [],
+              "contract_weight": 1,
+              "edupageid": ""
+            },
+            {
+              "id": "*1156",
+              "name": "Falsafa (Sem)",
+              "short": "Falsafa (Sem)",
+              "color": "#993333",
+              "picture_url": "",
+              "customfields": [
+                {
+                  "field": "#3375",
+                  "value": ""
+                }
+              ],
+              "contract_weight": 1,
+              "edupageid": ""
+            },
+            {
+              "id": "*2084",
+              "name": "Marketing (Ma)",
+              "short": "Marketing (Ma)",
+              "color": "#66CCCC",
+              "picture_url": "",
+              "customfields": [
+                {
+                  "field": "#3375",
+                  "value": ""
+                }
+              ],
+              "contract_weight": 1,
+              "edupageid": ""
+            },
+            {
+              "id": "*2087",
+              "name": "Marketing (sem)",
+              "short": "Marketing (sem)",
+              "color": "#009933",
+              "picture_url": "",
+              "customfields": [
+                {
+                  "field": "#3375",
+                  "value": ""
+                }
+              ],
+              "contract_weight": 1,
+              "edupageid": ""
+            },
+            {
+              "id": "*6783",
+              "name": "Raqamli iqtisodiyot (Ma)",
+              "short": "Raqamli iqtisodiyot (Ma)",
+              "color": "#40FF40",
+              "picture_url": "",
+              "customfields": [],
+              "contract_weight": 1,
+              "edupageid": ""
+            },
+            {
+              "id": "*2833",
+              "name": "Raqamli iqtisodiyot (Sem)",
+              "short": "Raqamli iqtisodiyot (Sem)",
+              "color": "#CCCCFF",
+              "picture_url": "",
+              "customfields": [
+                {
+                  "field": "#3375",
+                  "value": ""
+                }
+              ],
+              "contract_weight": 1,
+              "edupageid": ""
+            }
+          ]
+        },
+        {
+          "id": "teachers",
+          "data_rows": [
+            {
+              "id": "*1672",
+              "nameprefix": "",
+              "namesuffix": "",
+              "name": "Qudratova Umida",
+              "short": "Qudratova U.",
+              "bell": "",
+              "color": "#99FFFF",
+              "fontcolorprint": "",
+              "fontcolorprint2": "",
+              "customfields": [],
+              "edupageid": "",
+              "classids": []
+            },
+            {
+              "id": "*1865",
+              "nameprefix": "",
+              "namesuffix": "",
+              "name": "Rustamova Ziyoda",
+              "short": "Rustamova Ziyoda",
+              "bell": "",
+              "color": "#0066FF",
+              "fontcolorprint": "",
+              "fontcolorprint2": "",
+              "customfields": [],
+              "edupageid": "",
+              "classids": []
+            },
+            {
+              "id": "*1949",
+              "nameprefix": "",
+              "namesuffix": "",
+              "name": "Samieva Maftuna",
+              "short": "Samieva M.",
+              "bell": "",
+              "color": "#33CC00",
+              "fontcolorprint": "",
+              "fontcolorprint2": "",
+              "customfields": [],
+              "edupageid": "",
+              "classids": []
+            },
+            {
+              "id": "-883",
+              "nameprefix": "",
+              "namesuffix": "",
+              "name": "Yusupov Maxammadamin",
+              "short": "Yusupov M",
+              "bell": "",
+              "color": "#66FFFF",
+              "fontcolorprint": "",
+              "fontcolorprint2": "",
+              "customfields": [],
+              "edupageid": "-883",
+              "classids": []
+            }
+          ]
+        },
+        {
+          "id": "classrooms",
+          "data_rows": [
+            {
+              "id": "*243",
+              "name": "5/106-12 lab",
+              "short": "5/106 lab",
+              "buildingid": "",
+              "bell": "",
+              "color": "#14C030",
+              "customfields": []
+            },
+            {
+              "id": "*244",
+              "name": "5/108-12 lab",
+              "short": "5/108 lab",
+              "buildingid": "",
+              "bell": "",
+              "color": "#CCFF66",
+              "customfields": []
+            },
+            {
+              "id": "*245",
+              "name": "5/110-12 lab",
+              "short": "5/110 lab",
+              "buildingid": "",
+              "bell": "",
+              "color": "#80C0FF",
+              "customfields": []
+            },
+            {
+              "id": "*248",
+              "name": "5/114-12 lab",
+              "short": "5/114 lab",
+              "buildingid": "",
+              "bell": "",
+              "color": "#9900FF",
+              "customfields": []
+            },
+            {
+              "id": "*349",
+              "name": "7-bino faollar zali-160",
+              "short": "7-bino faollar-160 zali",
+              "buildingid": "",
+              "bell": "",
+              "color": "#808080",
+              "customfields": []
+            },
+            {
+              "id": "*359",
+              "name": "7/210-60",
+              "short": "7/210-60",
+              "buildingid": "",
+              "bell": "",
+              "color": "#8000FF",
+              "customfields": []
+            },
+            {
+              "id": "*363",
+              "name": "7/214-60",
+              "short": "7/214-60",
+              "buildingid": "",
+              "bell": "",
+              "color": "#9900FF",
+              "customfields": []
+            },
+            {
+              "id": "*365",
+              "name": "7/216-30",
+              "short": "7/216-30",
+              "buildingid": "",
+              "bell": "",
+              "color": "#CC66FF",
+              "customfields": []
+            },
+            {
+              "id": "*366",
+              "name": "7/217-30",
+              "short": "7/217-30",
+              "buildingid": "",
+              "bell": "",
+              "color": "#FF0066",
+              "customfields": []
+            },
+            {
+              "id": "*370",
+              "name": "7/405-30",
+              "short": "7/405-30",
+              "buildingid": "",
+              "bell": "",
+              "color": "#00CC99",
+              "customfields": []
+            },
+            {
+              "id": "*372",
+              "name": "7/407-24",
+              "short": "7/407-24",
+              "buildingid": "",
+              "bell": "",
+              "color": "#006699",
+              "customfields": []
+            }
+          ]
+        },
+        {
+          "id": "groups",
+          "data_rows": [
+            {
+              "id": "*2946",
+              "name": "Весь класс",
+              "classid": "*590",
+              "entireclass": true,
+              "ascttdivision": "",
+              "divisionid": "*590:",
+              "color": "#FF0000"
+            },
+            {
+              "id": "*2951",
+              "name": "Весь класс",
+              "classid": "*591",
+              "entireclass": true,
+              "ascttdivision": "",
+              "divisionid": "*591:",
+              "color": "#FF0000"
+            }
+          ]
+        },
+        {
+          "id": "days",
+          "data_rows": [
+            {
+              "id": "0",
+              "name": "Monday",
+              "short": "Mn"
+            },
+            {
+              "id": "1",
+              "name": "Tuesday",
+              "short": "Tu"
+            },
+            {
+              "id": "2",
+              "name": "Wednesday",
+              "short": "Wed"
+            },
+            {
+              "id": "3",
+              "name": "Thursday",
+              "short": "Thu"
+            },
+            {
+              "id": "4",
+              "name": "Friday",
+              "short": "Fri"
+            },
+            {
+              "id": "5",
+              "name": "Saturday",
+              "short": "Sat"
+            }
+          ]
+        },
+        {
+          "id": "weeks",
+          "data_rows": [
+            {
+              "id": "0",
+              "name": "Неделя A",
+              "short": "A"
+            },
+            {
+              "id": "1",
+              "name": "Неделя B",
+              "short": "B"
+            }
+          ]
+        },
+        {
+          "id": "terms",
+          "data_rows": [
+            {
+              "id": "0",
+              "name": "Семестр 1",
+              "short": "T1"
+            }
+          ]
+        },
+        {
+          "id": "periods",
+          "data_rows": [
+            {
+              "id": "1",
+              "period": "1",
+              "name": "1",
+              "short": "1",
+              "starttime": "08:00",
+              "endtime": "09:20",
+              "daydata": {},
+              "printinsummary": true,
+              "printinteacher": true,
+              "printinclass": true,
+              "printinclassroom": true,
+              "printonlyinbells": []
+            },
+            {
+              "id": "2",
+              "period": "2",
+              "name": "2",
+              "short": "2",
+              "starttime": "09:30",
+              "endtime": "10:50",
+              "daydata": {},
+              "printinsummary": true,
+              "printinteacher": true,
+              "printinclass": true,
+              "printinclassroom": true,
+              "printonlyinbells": []
+            },
+            {
+              "id": "3",
+              "period": "3",
+              "name": "3",
+              "short": "3",
+              "starttime": "11:00",
+              "endtime": "12:20",
+              "daydata": {},
+              "printinsummary": true,
+              "printinteacher": true,
+              "printinclass": true,
+              "printinclassroom": true,
+              "printonlyinbells": []
+            },
+            {
+              "id": "4",
+              "period": "4",
+              "name": "4",
+              "short": "4",
+              "starttime": "13:00",
+              "endtime": "14:20",
+              "daydata": {},
+              "printinsummary": true,
+              "printinteacher": true,
+              "printinclass": true,
+              "printinclassroom": true,
+              "printonlyinbells": []
+            },
+            {
+              "id": "5",
+              "period": "5",
+              "name": "5",
+              "short": "5",
+              "starttime": "14:30",
+              "endtime": "15:50",
+              "daydata": {},
+              "printinsummary": true,
+              "printinteacher": true,
+              "printinclass": true,
+              "printinclassroom": true,
+              "printonlyinbells": []
+            },
+            {
+              "id": "6",
+              "period": "6",
+              "name": "6",
+              "short": "6",
+              "starttime": "16:00",
+              "endtime": "17:20",
+              "daydata": {},
+              "printinsummary": true,
+              "printinteacher": true,
+              "printinclass": true,
+              "printinclassroom": true,
+              "printonlyinbells": []
+            },
+            {
+              "id": "7",
+              "period": "7",
+              "name": "7",
+              "short": "7",
+              "starttime": "17:30",
+              "endtime": "18:50",
+              "daydata": {},
+              "printinsummary": true,
+              "printinteacher": true,
+              "printinclass": true,
+              "printinclassroom": true,
+              "printonlyinbells": []
+            },
+            {
+              "id": "8",
+              "period": "8",
+              "name": "8.",
+              "short": "8",
+              "starttime": "19:00",
+              "endtime": "20:20",
+              "daydata": {},
+              "printinsummary": true,
+              "printinteacher": true,
+              "printinclass": true,
+              "printinclassroom": true,
+              "printonlyinbells": []
+            }
+          ]
+        },
+        {
+          "id": "globals",
+          "data_rows": [
+            {
+              "id": "1",
+              "name": "",
+              "settings": {
+                "m_nZlozitostGener": 1,
+                "m_bAllowZlavnenie": true,
+                "m_bGenerDraft": false,
+                "m_nCoGenerovat": 0,
+                "m_nSchoolType": 0,
+                "m_nGapsCounting": 0,
+                "m_nTurciTyp": 0,
+                "m_bSujectsInMinutes": false,
+                "m_bShowComboDays": false,
+                "m_bShowTeacherFullNameInMainView": false,
+                "name_format": "LSF",
+                "seminars_display": "",
+                "m_strPrintHeaderText": "",
+                "m_strDateBellowTimeTable": "Действительность: 07/09/2026-30/09/2026",
+                "m_bPrintDozory": true,
+                "m_bPrintDozoryVSuhrnnych": false,
+                "m_bPrintDozoryColor": false,
+                "m_bPrintSinglesSpolu": false,
+                "m_bPrintDoublesAsSingles": false,
+                "m_nTimeFormat": 0,
+                "m_nPrvyDen": 0,
+                "m_bPrintDayAsNumber": false,
+                "m_DozoryKriteria": {
+                  "ucitel_limit_pocet": 0,
+                  "ucitel_limit_minuty": 0,
+                  "ucitel_rovnomerne_pocet": 0,
+                  "ucitel_rovnomerne_minuty": 0,
+                  "ucitel_uci_predalebopo": 0,
+                  "ucitel_uci_predajpo": 0,
+                  "ucitel_uci_vsusednej_predalebopo": 0,
+                  "ucitel_uci_vsusednej_predajpo": 0,
+                  "ucitel_cezdvojhodinovku": 0,
+                  "ucitel_prazdnyden": 0,
+                  "ucitel_predvyucovanim": 0,
+                  "ucitel_povyucovani": 0,
+                  "ucitel_vjedenden": 0,
+                  "ucitel_zasebou": 0
+                },
+                "draft_options": {}
+              },
+              "customfields": [],
+              "reg_name": "Tashkent State University of Economics, Uzbekiston avenue 49",
+              "edupage_year": 2026,
+              "tt_num": "",
+              "tt_datefrom": ""
+            }
+          ]
+        },
+        {
+          "id": "bells",
+          "data_rows": [
+            {
+              "id": "0",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "1",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "2",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "3",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "4",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "5",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "6",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "7",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "8",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "9",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "10",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "11",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "12",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "13",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "14",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "15",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "16",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "17",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "18",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "19",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "20",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "21",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "22",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "23",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "24",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "25",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "26",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "27",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "28",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "29",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "30",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "31",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "32",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "33",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "34",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "35",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "36",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "37",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "38",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "39",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "40",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "41",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "42",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "43",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "44",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "45",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "46",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "47",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "48",
+              "perioddata": {},
+              "breakdata": {}
+            },
+            {
+              "id": "49",
+              "perioddata": {},
+              "breakdata": {}
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "substitution": "<div class=\"_RSS23\"><style type=\"text/css\">._RSS23 .signature {font-Size:20px;float:right;border-Bottom:1px dashed #c0c0c0;width:100px;margin-Right:4px;margin-Left:10px}\n._RSS23 .row {display:flex;flex-Direction:row;align-Items:baseline;font-Size:12px;margin-Bottom:1px}\n._RSS23 .period {font-Size:16px;text-Align:center;flex-Grow:0;margin-Right:10px}\n._RSS23 .period>span {white-Space:pre;display:inline-block;min-Width:30px}\n._RSS23 .info {flex:1}\n._RSS23 .section {margin-Bottom:15px;border:1px solid #c0c0c0;border-Radius:6px;padding:4px}\n._RSS23 .header {font-Size:20px;margin-Bottom:5px;font-Weight:bold;border:2px solid #c0c0c0;border-Radius:6px;padding:4px;display:inline-block}\n._RSS23 .rows {padding-Left:5px}\n._RSS23 .rows .signature {font-Size:inherit}</style><div data-date=\"2026-09-17\"><div style=\"height:15px;flex:none\"></div><div class=\"section print-nobreak\"><div class=\"rows\"><div class=\"row nosubst\"><div class=\"period\"><span class=\"print-font-resizable\"></span></div><div class=\"info\"><span class=\"print-font-resizable\">Для этого дня замен нет.</span></div></div></div></div></div></div>"
+}

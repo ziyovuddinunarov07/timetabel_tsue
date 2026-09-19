@@ -1,0 +1,5 @@
+# Exact versions installed and tested on Python 3.14.6.
+-r requirements-dev.txt
+greenlet==3.5.6
+playwright==1.63.0
+pyee==13.0.1
