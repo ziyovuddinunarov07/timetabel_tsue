@@ -6,20 +6,24 @@ from aiogram import Bot, Dispatcher
 from aiogram.types import Update
 import pytest
 
-from tsue_bot.handlers import KEYBOARD, make_router
+from tsue_bot.handlers import DAY_BUTTONS, KEYBOARD, make_router
 from tsue_bot.formatting import START, UNKNOWN
 from tsue_bot.models import CacheState
 
 
 def test_exact_persistent_keyboard():
-    assert [[b.text for b in row] for row in KEYBOARD.keyboard] == [['Bugungi jadval','Haftalik jadval']]
+    assert [[b.text for b in row] for row in KEYBOARD.keyboard] == [['📅 Bugungi'], list(DAY_BUTTONS[:3]), list(DAY_BUTTONS[3:]), ['Haftalik jadval']]
     assert KEYBOARD.is_persistent and not KEYBOARD.one_time_keyboard
 
 
 @pytest.mark.parametrize('text,expected',[
-    ('/start',START),('/help','Bugungi jadval tugmasi'),('/today','Bugungi dars jadvali'),
-    ('Bugungi jadval','Bugungi dars jadvali'),('/week','Haftalik dars jadvali'),
+    ('/start',START),('/help','📅 Bugungi tugmasi'),('/today','Payshanba kungi dars jadvali'),
+    ('Bugungi jadval','Payshanba kungi dars jadvali'),('/week','Haftalik dars jadvali'),
     ('Haftalik jadval','Haftalik dars jadvali'),('salom',UNKNOWN),
+    ('📅 Bugungi','Payshanba kungi dars jadvali'),
+    ('💼 Dush','14.09.2026, Dushanba'), ('📚 Sesh','15.09.2026, Seshanba'),
+    ('📝 Chor','16.09.2026, Chorshanba'), ('💡 Pay','17.09.2026, Payshanba'),
+    ('🎯 Jum','18.09.2026, Juma'), ('⚡ Shan','19.09.2026, Shanba'),
 ])
 async def test_real_aiogram_routing(text,expected,snapshot,instant):
     service=SimpleNamespace(refresh=AsyncMock(return_value=CacheState(snapshot,instant)),interval=14400)
@@ -34,7 +38,9 @@ async def test_real_aiogram_routing(text,expected,snapshot,instant):
     try:
         await dispatcher.feed_update(bot,update)
         sender.send.assert_awaited_once()
-        assert expected in '\n'.join(sender.send.call_args.args[1])
+        response = '\n'.join(sender.send.call_args.args[1])
+        assert expected in response
+        assert '〰' not in response
     finally:
         await bot.session.close()
 

@@ -7,11 +7,18 @@ from aiogram.exceptions import TelegramRetryAfter
 from aiogram.filters import Command, CommandStart
 from aiogram.types import KeyboardButton, LinkPreviewOptions, Message, ReplyKeyboardMarkup
 
-from .dates import now
+from .dates import now, week_dates
 from .formatting import HELP, START, UNKNOWN, format_response
 
+DAY_BUTTONS = ('💼 Dush', '📚 Sesh', '📝 Chor', '💡 Pay', '🎯 Jum', '⚡ Shan')
+
 KEYBOARD = ReplyKeyboardMarkup(
-    keyboard=[[KeyboardButton(text='Bugungi jadval'), KeyboardButton(text='Haftalik jadval')]],
+    keyboard=[
+        [KeyboardButton(text='📅 Bugungi')],
+        [KeyboardButton(text=text) for text in DAY_BUTTONS[:3]],
+        [KeyboardButton(text=text) for text in DAY_BUTTONS[3:]],
+        [KeyboardButton(text='Haftalik jadval')],
+    ],
     resize_keyboard=True, is_persistent=True, one_time_keyboard=False)
 
 
@@ -54,14 +61,16 @@ def make_router(service, group='MR-86/25', clock=now, sender=None):
     async def help_command(message: Message):
         await sender.send(message, [HELP.replace('4 soatda', f'{service.interval / 3600:g} soatda')])
 
-    async def answer(message, weekly):
+    async def answer(message, weekly=False, weekday=None):
         state = await service.refresh()
         # Calculate after I/O too, so a slow refresh crossing midnight uses the new date.
         date = clock().date()
+        if weekday is not None:
+            date = week_dates(date)[weekday]
         await sender.send(message, format_response(state, date, weekly, group))
 
     @router.message(Command('today'))
-    @router.message(F.text == 'Bugungi jadval')
+    @router.message(F.text.in_({'Bugungi jadval', '📅 Bugungi'}))
     async def today(message: Message):
         await answer(message, False)
 
@@ -69,6 +78,10 @@ def make_router(service, group='MR-86/25', clock=now, sender=None):
     @router.message(F.text == 'Haftalik jadval')
     async def week(message: Message):
         await answer(message, True)
+
+    @router.message(F.text.in_(DAY_BUTTONS))
+    async def weekday(message: Message):
+        await answer(message, weekday=DAY_BUTTONS.index(message.text))
 
     @router.message()
     async def unknown(message: Message):

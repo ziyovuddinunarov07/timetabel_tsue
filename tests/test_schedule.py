@@ -117,8 +117,8 @@ def test_saturday_is_supported(raw):
 def test_today_keeps_finished_lessons(snapshot,instant):
     texts = format_response(CacheState(snapshot,instant),instant.date())
     full = '\n'.join(texts)
-    assert all(x in full for x in ('17.09.2026, Payshanba','4-juftlik','5-juftlik','6-juftlik'))
-    assert '13:00–14:20' in full and '17.09.2026 18:30' in full
+    assert all(x in full for x in ('17.09.2026, Payshanba','4-para','5-para','6-para'))
+    assert '13:00 - 14:20' in full and '17.09.2026 18:30' in full
 
 
 def test_failure_and_no_valid_messages(snapshot,instant):
@@ -131,8 +131,8 @@ def test_failure_and_no_valid_messages(snapshot,instant):
 def test_missing_names_output(snapshot,instant):
     s = snapshot.schedules[0]
     snapshot = replace(snapshot,schedules=[replace(s,lessons=[replace(x,teachers=[],rooms=[]) for x in s.lessons])])
-    assert 'O‘qituvchi: Ko‘rsatilmagan' in '\n'.join(format_response(CacheState(snapshot,instant),instant.date()))
-    assert 'Xona: Ko‘rsatilmagan' in '\n'.join(format_response(CacheState(snapshot,instant),instant.date()))
+    assert 'O‘qituvchi:</b> Ko‘rsatilmagan' in '\n'.join(format_response(CacheState(snapshot,instant),instant.date()))
+    assert 'Xona:</b> Ko‘rsatilmagan' in '\n'.join(format_response(CacheState(snapshot,instant),instant.date()))
 
 
 def test_long_html_safe_messages():
@@ -148,8 +148,8 @@ def test_all_week_dates_and_no_cyrillic_ui(snapshot,instant):
     import re
     full = '\n'.join(format_response(CacheState(snapshot,instant),instant.date(),weekly=True))
     assert '14.09.2026 – 20.09.2026' in full
-    assert '19.09.2026, Shanba\nDarslar yo‘q.' in full
-    assert '20.09.2026, Yakshanba\nDarslar yo‘q.' in full
+    assert '19.09.2026, Shanba</b>\nDarslar yo‘q.' in full
+    assert '20.09.2026, Yakshanba</b>\nDarslar yo‘q.' in full
     assert not re.search('[А-Яа-яЁё]',full)
 
 
@@ -172,3 +172,29 @@ def test_partial_card_loss_rejected(raw):
     rows(raw,'cards').pop()
     with pytest.raises(SourceError):
         parse_schedule(raw['regular'],raw['meta'],'MR-86/25')
+
+
+def test_styled_output_escapes_source_and_balances_chunks(snapshot, instant):
+    from xml.etree import ElementTree
+    schedule = snapshot.schedules[0]
+    dangerous = '<b>Injected & subject</b> 😀 ' * 300
+    snapshot = replace(snapshot, schedules=[replace(schedule, lessons=[
+        replace(lesson, subject=dangerous) for lesson in schedule.lessons])])
+    parts = format_response(CacheState(snapshot, instant), instant.date(), weekly=True, group='<Admin & group>')
+    assert len(parts) > 1
+    for part in parts:
+        assert len(part.encode('utf-16-le')) // 2 <= 3900
+        ElementTree.fromstring('<message>' + part + '</message>')
+        assert '<b>Injected' not in part
+    assert '&lt;Admin &amp; group&gt;' in parts[0]
+    assert 'FeeeXBot' not in ''.join(parts)
+
+
+def test_reference_lesson_style(snapshot, instant):
+    full = '\n'.join(format_response(CacheState(snapshot, instant), date(2026, 9, 14)))
+    assert '<b>🗓 Dushanba kungi dars jadvali</b>' in full
+    assert '<b>🎓 Guruh:</b> MR-86/25' in full
+    assert '<b>🔹 4-para</b> (⏱ 13:00 - 14:20)' in full
+    assert '<b>📚 Fan:</b> Falsafa (Sem)' in full
+    assert '〰' not in full
+    assert '7/216-30\n\n\n<b>🔹 5-para' in full

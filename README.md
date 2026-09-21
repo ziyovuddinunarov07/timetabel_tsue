@@ -23,7 +23,7 @@ Set `TELEGRAM_BOT_TOKEN` in the local `.env` editor, save it, and run:
 .\.venv\Scripts\python.exe -m tsue_bot
 ```
 
-No virtual-environment activation or PowerShell execution-policy change is necessary. An existing environment variable takes precedence over `.env`. Start a private chat with your bot and send `/start`. The persistent keyboard contains exactly **Bugungi jadval** and **Haftalik jadval**. `/today`, `/week`, and `/help` are supported. No registration or group selection is needed.
+No virtual-environment activation or PowerShell execution-policy change is necessary. An existing environment variable takes precedence over `.env`. Start a private chat with your bot and send `/start`. The persistent keyboard shows **📅 Bugungi**, two rows of Monday–Saturday buttons, and **Haftalik jadval**. Weekday buttons select that date in the current Monday–Sunday week in Tashkent. The old **Bugungi jadval** text is still accepted. Timetable replies use emoji labels, bold headings, and blank lines between lessons, with no attribution footer. `/today`, `/week`, and `/help` are supported. No registration or group selection is needed.
 
 The program runs until Ctrl+C. **The computer/server must stay on and the process must stay running** for polling and background refreshes. Windows sleep suspends it. Run only one polling instance per token and database.
 
